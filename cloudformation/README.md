@@ -28,3 +28,10 @@ Fn::Join: [":", ["arn:aws:dynamodb", {Ref: AWS::Region}, {Ref: AWS::AccountId}, 
 ```json
 { "Fn::Join": [":", ["arn:aws:dynamodb", {"Ref": "AWS::Region"}, {"Ref": "AWS::AccountId"}, ":table/", {"Ref": "TableKeyHere"}]]}
 ```
+
+## Kinesis Stream
+
+```json
+{ "Fn::Join": [":", ["arn:aws:kinesis", {"Ref": "AWS::Region"}, {"Ref": "AWS::AccountId"}, ":stream/", {"Ref": "StreamNameHere"}]]}
+```
+
